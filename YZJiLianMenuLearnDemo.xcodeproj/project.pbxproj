@@ -14,6 +14,11 @@
 		426ACB671C6744B100359031 /* YZJiLianMenuLearnDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 426ACB651C6744B100359031 /* YZJiLianMenuLearnDemo.xcdatamodeld */; };
 		426ACB691C6744B100359031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426ACB681C6744B100359031 /* Assets.xcassets */; };
 		426ACB6C1C6744B100359031 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426ACB6A1C6744B100359031 /* LaunchScreen.storyboard */; };
+		426ACB741C6744DD00359031 /* type.plist in Resources */ = {isa = PBXBuildFile; fileRef = 426ACB731C6744DD00359031 /* type.plist */; };
+		426ACB771C6747F500359031 /* YZTypeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426ACB761C6747F500359031 /* YZTypeTableViewController.m */; };
+		426ACB7A1C67480300359031 /* YZSubTypeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426ACB791C67480300359031 /* YZSubTypeTableViewController.m */; };
+		426ACB7D1C67492D00359031 /* YZTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 426ACB7C1C67492D00359031 /* YZTypeModel.m */; };
+		426ACB821C6753AF00359031 /* YZSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426ACB811C6753AF00359031 /* YZSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,15 @@
 		426ACB681C6744B100359031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		426ACB6B1C6744B100359031 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		426ACB6D1C6744B100359031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		426ACB731C6744DD00359031 /* type.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type.plist; sourceTree = "<group>"; };
+		426ACB751C6747F500359031 /* YZTypeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTypeTableViewController.h; sourceTree = "<group>"; };
+		426ACB761C6747F500359031 /* YZTypeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTypeTableViewController.m; sourceTree = "<group>"; };
+		426ACB781C67480300359031 /* YZSubTypeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZSubTypeTableViewController.h; sourceTree = "<group>"; };
+		426ACB791C67480300359031 /* YZSubTypeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZSubTypeTableViewController.m; sourceTree = "<group>"; };
+		426ACB7B1C67492D00359031 /* YZTypeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTypeModel.h; sourceTree = "<group>"; };
+		426ACB7C1C67492D00359031 /* YZTypeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTypeModel.m; sourceTree = "<group>"; };
+		426ACB801C6753AF00359031 /* YZSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZSecondViewController.h; sourceTree = "<group>"; };
+		426ACB811C6753AF00359031 /* YZSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZSecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +76,16 @@
 			children = (
 				426ACB5C1C6744B100359031 /* AppDelegate.h */,
 				426ACB5D1C6744B100359031 /* AppDelegate.m */,
-				426ACB5F1C6744B100359031 /* ViewController.h */,
-				426ACB601C6744B100359031 /* ViewController.m */,
+				426ACB7F1C67537300359031 /* SecondMethod */,
+				426ACB7E1C67534B00359031 /* FirstMethod */,
+				426ACB7B1C67492D00359031 /* YZTypeModel.h */,
+				426ACB7C1C67492D00359031 /* YZTypeModel.m */,
 				426ACB621C6744B100359031 /* Main.storyboard */,
 				426ACB681C6744B100359031 /* Assets.xcassets */,
 				426ACB6A1C6744B100359031 /* LaunchScreen.storyboard */,
 				426ACB6D1C6744B100359031 /* Info.plist */,
 				426ACB651C6744B100359031 /* YZJiLianMenuLearnDemo.xcdatamodeld */,
+				426ACB731C6744DD00359031 /* type.plist */,
 				426ACB591C6744B100359031 /* Supporting Files */,
 			);
 			path = YZJiLianMenuLearnDemo;
@@ -80,6 +97,28 @@
 				426ACB5A1C6744B100359031 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		426ACB7E1C67534B00359031 /* FirstMethod */ = {
+			isa = PBXGroup;
+			children = (
+				426ACB5F1C6744B100359031 /* ViewController.h */,
+				426ACB601C6744B100359031 /* ViewController.m */,
+				426ACB751C6747F500359031 /* YZTypeTableViewController.h */,
+				426ACB761C6747F500359031 /* YZTypeTableViewController.m */,
+				426ACB781C67480300359031 /* YZSubTypeTableViewController.h */,
+				426ACB791C67480300359031 /* YZSubTypeTableViewController.m */,
+			);
+			name = FirstMethod;
+			sourceTree = "<group>";
+		};
+		426ACB7F1C67537300359031 /* SecondMethod */ = {
+			isa = PBXGroup;
+			children = (
+				426ACB801C6753AF00359031 /* YZSecondViewController.h */,
+				426ACB811C6753AF00359031 /* YZSecondViewController.m */,
+			);
+			name = SecondMethod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +181,7 @@
 			files = (
 				426ACB6C1C6744B100359031 /* LaunchScreen.storyboard in Resources */,
 				426ACB691C6744B100359031 /* Assets.xcassets in Resources */,
+				426ACB741C6744DD00359031 /* type.plist in Resources */,
 				426ACB641C6744B100359031 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,9 +194,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				426ACB671C6744B100359031 /* YZJiLianMenuLearnDemo.xcdatamodeld in Sources */,
+				426ACB821C6753AF00359031 /* YZSecondViewController.m in Sources */,
 				426ACB611C6744B100359031 /* ViewController.m in Sources */,
 				426ACB5E1C6744B100359031 /* AppDelegate.m in Sources */,
+				426ACB7A1C67480300359031 /* YZSubTypeTableViewController.m in Sources */,
 				426ACB5B1C6744B100359031 /* main.m in Sources */,
+				426ACB7D1C67492D00359031 /* YZTypeModel.m in Sources */,
+				426ACB771C6747F500359031 /* YZTypeTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
